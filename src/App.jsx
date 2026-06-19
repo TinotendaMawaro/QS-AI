@@ -388,7 +388,7 @@ export default function App() {
           onLogout={triggerLogoutAction}
           currentUser={currentUser}
         />
-        <main className="flex-1 mx-auto max-w-7xl w-full px-4 py-6">
+        <main className="flex-1 mx-auto max-w-7xl w-full px-3 md:px-4 py-4 md:py-6 mobile-content-top md:pt-0">
           {activeTab === 'dashboard' && (
             <Dashboard
               projects={projects}

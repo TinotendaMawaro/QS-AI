@@ -6,5 +6,42 @@
   body {
     @apply bg-[#030712] text-slate-100 antialiased;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  @media (max-width: 767px) {
+    .mobile-padding {
+      @apply px-3 py-2;
+    }
+    
+    .mobile-text {
+      @apply text-sm;
+    }
+    
+    .mobile-heading {
+      @apply text-base;
+    }
+    
+    .mobile-content-top {
+      @apply pt-14;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .tablet-padding {
+      @apply px-4;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .desktop-padding {
+      @apply px-6;
+    }
   }
 }
